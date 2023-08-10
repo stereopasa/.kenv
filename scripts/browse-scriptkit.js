@@ -15,5 +15,5 @@ To share your own script, post to our Script Kit GitHub Discussions:
 
 // Note: Feel free to delete this script!
 
-import "@johnlindquist/kit"
-open("https://scriptkit.com/scripts")
+import '@johnlindquist/kit';
+open('https://scriptkit.com/scripts');

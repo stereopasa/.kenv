@@ -11,5 +11,5 @@ Watch Script Kit Tutorial videos. 👀
 
 // Note: Feel free to delete this script!
 
-import "@johnlindquist/kit"
-open("https://scriptkit.com/tutorials")
+import '@johnlindquist/kit';
+open('https://scriptkit.com/tutorials');

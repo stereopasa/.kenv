@@ -1,0 +1,11 @@
+## Ignore all files (but still allow sub-folder scanning)
+*
+!*/
+
+## Allow certain file types
+!scripts/*.ts
+!scripts/*.js
+!templates/*.ts
+!templates/*.js
+!*.json
+package-lock.json

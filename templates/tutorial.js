@@ -8,7 +8,7 @@
 
 // Find console.log messages in <- logs/{{name}}.log
 // (You can also `tail -f ~/.kenv/logs/{{name}}.log` in the terminal)
-console.log(`{{USER}} made a {{name}} script!`)
+console.log(`{{USER}} made a {{name}} script!`);
 
 /**
  * Step 1: Accept an argument and show the result
