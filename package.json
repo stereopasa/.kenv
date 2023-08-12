@@ -5,7 +5,12 @@
     "lint:prettier": "prettier --check ."
   },
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.1",
+    "@johnlindquist/kit": "file:../.kit",
     "@stereopasa/prettier-config": "^1.1.4",
+    "bytes-formatter": "^21.6.12",
+    "fluent-ffmpeg": "^2.1.2",
     "prettier": "^3.0.1"
   }
 }
