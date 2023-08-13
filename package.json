@@ -8,9 +8,13 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.1.1",
     "@johnlindquist/kit": "file:../.kit",
+    "@squoosh/cli": "^0.7.3",
+    "@squoosh/lib": "^0.5.3",
     "@stereopasa/prettier-config": "^1.1.4",
     "bytes-formatter": "^21.6.12",
     "fluent-ffmpeg": "^2.1.2",
-    "prettier": "^3.0.1"
+    "image-type": "^5.2.0",
+    "prettier": "^3.0.1",
+    "sharp": "^0.32.4"
   }
 }
