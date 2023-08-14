@@ -8,7 +8,7 @@ const { $ } = await import('execa');
 const { formatBytes } = await import('bytes-formatter');
 import sharp from 'sharp';
 const { default: imageType, minimumBytes } = await import('image-type');
-const { ImagePool } = await import('@squoosh/lib');
+// const { ImagePool } = await import('@squoosh/lib');
 // import { ImagePool } from '@squoosh/lib';
 
 const $$ = $({ verbose: true });
@@ -47,7 +47,7 @@ if (source === 'Clipboard') {
   if (source === 'File Selection') {
     filePaths = selectedFiles.split('\n').filter((fileName) => fileName.endsWith('.png'));
   } else {
-    let droppedFiles = await drop({ placeholder: 'Drop images to compress' });
+    let droppedFiles = await drop({ placeholder: 'Drop images to compress', alwaysOnTop: true });
     filePaths = droppedFiles.map((file) => file.path);
   }
 

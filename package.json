@@ -12,9 +12,12 @@
     "@squoosh/lib": "^0.5.3",
     "@stereopasa/prettier-config": "^1.1.4",
     "bytes-formatter": "^21.6.12",
+    "execa": "^7.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "image-type": "^5.2.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.1"
+  },
+  "dependencies": {
     "sharp": "^0.32.4"
   }
 }
