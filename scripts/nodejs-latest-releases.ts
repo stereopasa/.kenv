@@ -11,13 +11,12 @@ if (process.env.HTTP_PROXY) {
   agent = new HttpsProxyAgent(process.env.HTTP_PROXY);
 }
 
-let resp = await get('https://nodejs.org/en/download/releases', {
+const resp = await get('https://nodejs.org/en/download/releases', {
   httpAgent: agent,
   httpsAgent: agent,
   proxy: false,
   responseType: 'text',
 });
-
 const dom = new JSDOM(resp.data);
 
 // Parse HTML table element to JSON array of objects
@@ -48,14 +47,10 @@ const choices: Choice[] = table.map((release) => {
     npm: string;
     [key: string]: string;
   };
-  // console.log({ entry }, { rest });
   return {
     name: Version,
     description: `Date: ${Date}, npm: ${npm}` + (LTS ? `, LTS: ${LTS}` : ''),
     value: Version.split(' ')[1],
-    // description: Object.entries(rest)
-    //   .map(([k, v]) => `${k}:${v}`)
-    //   .join(' '),
   };
 });
 
